@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: promptzip-v39
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: ENFORCE_FREE_LIMIT
+        value: "false"
